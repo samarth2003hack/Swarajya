@@ -72,4 +72,39 @@ ul li {
     margin: 25px 20px 20px 20px;
     
 }
-/*This code is for navbar*/
+/*Here the nav code ends*/
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+/*Here popup code begins*/
+
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*This css for close buttonn of popup*/
+
+.close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    background: transparent;
+    cursor: pointer;
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
