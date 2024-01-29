@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../MY css/styles.css">
+    <link rel="stylesheet" href="../MYcss/styles.css">
+    <link rel="stylesheet" href="..//MYcss/logpop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
+
+
 <body>
     <header class="header">
         <img src="../images/swarajya.png" class="logo" alt="logo">
@@ -13,11 +17,50 @@
         <nav class="nav_links">
             <ul>
             <li><a href="">Register</a></li>
-            <li><a href="">Login</a></li>
+            <li id="log" style="cursor: pointer;"><a>Login</a></li>
             <li><a href="">Admiin Login</a></li>
             <li><a href="">About</a></li>
             </ul>
         </nav>
     </header>
+    <div class="bg-modal">
+
+    
+    <div  class="container">
+        <div class="wrapper">
+
+          <!--This begenning for close button-->
+          <div class="close">+</div>
+
+          <div class="title"><span>Login Form</span></div>
+          <form action="#">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email or Phone" required>
+            </div>
+            <div class="row">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass"><a href="#">Forgot password?</a></div>
+            <div class="row button">
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+          </form>
+        </div>
+      </div></div>
+ 
+      <!--This is javascript-->
+      <script>
+        document.getElementById('log').addEventListener('click',function(){
+          document.querySelector('.bg-modal').style.display ='flex';
+        });
+
+        document.querySelector('.close').addEventListener('click',function(){
+          document.querySelector('.bg-modal').style.display='none';
+        })
+      </script>
+</body>
 </body>
 </html>
